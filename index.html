@@ -19,8 +19,8 @@
             overflow-x: hidden;
         }
 
-        header {
-           background-color: #FFFFFF;
+       header {
+    background-color: #FFFFFF;
     padding: 25px 60px;
     box-shadow: 0 2px 12px rgba(75, 14, 35, 0.08);
     position: sticky;
@@ -30,10 +30,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
-    min-height: 100px;
-        }
-        .header-video {
+}
+     .hero-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,17 +42,17 @@
     transform: translate(-50%, -50%);
     z-index: 0;
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.4;
     pointer-events: none;
 }
 
-.header-overlay {
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(75, 14, 35, 0.5);
     z-index: 1;
     pointer-events: none;
 }
@@ -62,30 +60,19 @@
     box-shadow: 0 4px 16px rgba(75, 14, 35, 0.12);
 }
 
-header.scrolled .header-video {
-    opacity: 0.4;
-}
-
-header.scrolled .header-overlay {
-    background: rgba(255, 251, 245, 0.5);
-}
-        .logo {
+    .logo {
     height: 50px;
     transition: transform 0.3s;
-    position: relative;
-    z-index: 2;
 }
 
         .logo:hover {
             transform: scale(1.05);
         }
 
-       .language-switcher {
+      .language-switcher {
     display: flex;
     gap: 12px;
     align-items: center;
-    position: relative;
-    z-index: 2;
 }
 
         .lang-btn {
@@ -667,24 +654,22 @@ header.scrolled .header-overlay {
     </style>
 </head>
 <body>
-  <header id="header">
-   <video autoplay muted loop playsinline class="header-video" id="headerVideo">
-       <source src="https://raw.githubusercontent.com/vickybernardez28/Spottly-landing-page/main/video.jpg.mp4" type="video/mp4">
-       <source src="./video.jpg.mp4" type="video/mp4">
-       Tu navegador no soporta videos HTML5.
-   </video>
-   <div class="header-overlay"></div>
-   
+ <header id="header">
    <img src="https://i.imgur.com/TIe20GD.jpeg" alt="Spottly Logo" class="logo">
    <div class="language-switcher">
        <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
        <button class="lang-btn" onclick="changeLanguage('es')">ES</button>
    </div>
 </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Empty Tables, <strong>New Opportunities.</strong></h1>
+<section class="hero">
+    <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+        <source src="https://raw.githubusercontent.com/vickybernardez28/Spottly-landing-page/main/video.jpg.mp4" type="video/mp4">
+        <source src="./video.jpg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+        <h1>Empty Tables, <strong>New Opportunities.</strong></h1>
             <p>List your café on Spottly and let freelancers and remote workers book your tables during slow hours - effortlessly and profitably</p>
             <a href="#contact" class="cta-button">Partner With Spottly</a>
         </div>
@@ -805,21 +790,19 @@ header.scrolled .header-overlay {
     <div class="scroll-indicator" id="scrollTop">↑</div>
 
     <script>
-// Forzar reproducción del video
-    document.addEventListener('DOMContentLoaded', function() {
-        const video = document.getElementById('headerVideo');
-        if (video) {
-            video.muted = true;
-            video.play().catch(error => {
-                console.log('Video autoplay was prevented:', error);
-                // Intentar reproducir en la primera interacción del usuario
-                document.body.addEventListener('click', function playVideo() {
-                    video.play();
-                    document.body.removeEventListener('click', playVideo);
-                }, { once: true });
-            });
-        }
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('heroVideo');
+    if (video) {
+        video.muted = true;
+        video.play().catch(error => {
+            console.log('Video autoplay was prevented:', error);
+            document.body.addEventListener('click', function playVideo() {
+                video.play();
+                document.body.removeEventListener('click', playVideo);
+            }, { once: true });
+        });
+    }
+});
 
     const translations = {
 
