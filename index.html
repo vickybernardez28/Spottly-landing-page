@@ -803,68 +803,159 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+const translations = {
+    en: {
+        heroTitle: "Empty Tables, <strong>New Opportunities.</strong>",
+        heroSubtitle: "List your café on Spottly and let freelancers and remote workers book your tables during slow hours - effortlessly and profitably",
+        heroCTA: "Partner With Spottly",
+        howItWorksTitle: "How It Works",
+        step1Title: "Sign Up Your Venue",
+        step1Text: "Join Spottly's platform in minutes. Set your available hours, pricing, and space capacity with our simple onboarding process.",
+        step2Title: "Professionals Book Your Space",
+        step2Text: "Remote workers, freelancers, and students discover your venue through our platform and reserve seats for productive work sessions.",
+        step3Title: "Generate Additional Revenue",
+        step3Text: "Earn money during slow hours while customers enjoy food and beverages. Our system handles reservations automatically.",
+        platformFeaturesTitle: "Platform Features",
+        feature1Title: "Visual Seat Selection",
+        feature1Text: "Cinema-style booking system lets customers choose their perfect spot in your venue",
+        feature2Title: "Reservation Management",
+        feature2Text: "Automated booking system with real-time calendar and occupancy tracking",
+        feature3Title: "Integrated Payments",
+        feature3Text: "Seamless payment processing with automatic confirmation for every booking",
+        feature4Title: "Revenue Analytics",
+        feature4Text: "Detailed reports showing additional income and customer insights",
+        feature5Title: "User Profiles",
+        feature5Text: "Professional networking features coming soon to build community in your space",
+        feature6Title: "Mobile Ready",
+        feature6Text: "Web platform today, mobile app coming soon for on-the-go management",
+        whySpottlyTitle: "Why Venue Owners Love Spottly",
+        whySpottlyText: "Turn empty tables into profit with zero investment. Stand out from competitors, attract loyal professionals, and generate pure revenue during your slow hours—all while your team focuses on what they do best.",
+        inspireTitle: "Create Inspiring Work Environments",
+        inspireText: "Your venue already has everything professionals need: ambiance, comfort, and quality service. Spottly helps you maximize this potential.",
+        contactTitle: "Ready to Transform Your Venue?",
+        contactSubtitle: "Join the coworking revolution and unlock new income streams",
+        contactInfo: "<strong>Contact:</strong> partners@spottly.com | <strong>Phone:</strong> +54 11 1234-5678",
+        formName: "Name",
+        formNamePlaceholder: "Your name",
+        formEmail: "Email",
+        formEmailPlaceholder: "you@email.com",
+        formMessage: "Message",
+        formMessagePlaceholder: "How can we help you?",
+        formButton: "Send Message",
+        footerFAQ: "FAQs",
+        footerPolicy: "Cancellation Policy",
+        footerCopyright: "&copy; 2025 Spottly. Your new office around the corner."
+    },
+    es: {
+        heroTitle: "Mesas Vacías, <strong>Nuevas Oportunidades.</strong>",
+        heroSubtitle: "Registra tu café en Spottly y permite que freelancers y trabajadores remotos reserven tus mesas durante las horas tranquilas - sin esfuerzo y rentablemente",
+        heroCTA: "Asóciate con Spottly",
+        howItWorksTitle: "Cómo Funciona",
+        step1Title: "Registra Tu Local",
+        step1Text: "Únete a la plataforma de Spottly en minutos. Configura tus horarios disponibles, precios y capacidad del espacio con nuestro simple proceso de registro.",
+        step2Title: "Profesionales Reservan Tu Espacio",
+        step2Text: "Trabajadores remotos, freelancers y estudiantes descubren tu local a través de nuestra plataforma y reservan asientos para sesiones de trabajo productivas.",
+        step3Title: "Genera Ingresos Adicionales",
+        step3Text: "Gana dinero durante las horas de menor actividad mientras los clientes disfrutan de comida y bebidas. Nuestro sistema gestiona las reservas automáticamente.",
+        platformFeaturesTitle: "Características de la Plataforma",
+        feature1Title: "Selección Visual de Asientos",
+        feature1Text: "Sistema de reserva estilo cine que permite a los clientes elegir su lugar perfecto en tu local",
+        feature2Title: "Gestión de Reservas",
+        feature2Text: "Sistema de reservas automatizado con calendario en tiempo real y seguimiento de ocupación",
+        feature3Title: "Pagos Integrados",
+        feature3Text: "Procesamiento de pagos sin interrupciones con confirmación automática para cada reserva",
+        feature4Title: "Análisis de Ingresos",
+        feature4Text: "Informes detallados que muestran ingresos adicionales y datos sobre clientes",
+        feature5Title: "Perfiles de Usuario",
+        feature5Text: "Funciones de networking profesional próximamente para construir comunidad en tu espacio",
+        feature6Title: "Listo para Móviles",
+        feature6Text: "Plataforma web hoy, aplicación móvil próximamente para gestión en movimiento",
+        whySpottlyTitle: "Por Qué Los Dueños de Locales Aman Spottly",
+        whySpottlyText: "Convierte mesas vacías en ganancia sin inversión. Destácate de la competencia, atrae profesionales leales y genera ingresos puros durante tus horas tranquilas—todo mientras tu equipo se enfoca en lo que mejor sabe hacer.",
+        inspireTitle: "Crea Ambientes de Trabajo Inspiradores",
+        inspireText: "Tu local ya tiene todo lo que los profesionales necesitan: ambiente, comodidad y servicio de calidad. Spottly te ayuda a maximizar este potencial.",
+        contactTitle: "¿Listo para Transformar Tu Local?",
+        contactSubtitle: "Únete a la revolución del coworking y desbloquea nuevas fuentes de ingresos",
+        contactInfo: "<strong>Contacto:</strong> partners@spottly.com | <strong>Teléfono:</strong> +54 11 1234-5678",
+        formName: "Nombre",
+        formNamePlaceholder: "Tu nombre",
+        formEmail: "Correo Electrónico",
+        formEmailPlaceholder: "tu@email.com",
+        formMessage: "Mensaje",
+        formMessagePlaceholder: "¿Cómo podemos ayudarte?",
+        formButton: "Enviar Mensaje",
+        footerFAQ: "Preguntas Frecuentes",
+        footerPolicy: "Política de Cancelación",
+        footerCopyright: "&copy; 2025 Spottly. Tu nueva oficina a la vuelta de la esquina."
+    }
+};
 
-    const translations = {
-
-            en: {
-                heroTitle: "Empty Tables, <strong>New Opportunities.</strong>",
-                heroSubtitle: "List your café on Spottly and let freelancers and remote workers book your tables during slow hours - effortlessly and profitably",
-                heroCTA: "Partner With Spottly",
-                howItWorksTitle: "How It Works",
-                step1Title: "Sign Up Your Venue",
-                step1Text: "Join Spottly's platform in minutes. Set your available hours, pricing, and space capacity with our simple onboarding process.",
-                step2Title: "Professionals Book Your Space",
-                step2Text: "Remote workers, freelancers, and students discover your venue through our platform and reserve seats for productive work sessions.",
-                step3Title: "Generate Additional Revenue",
-                step3Text: "Earn money during slow hours while customers enjoy food and beverages. Our system handles reservations automatically.",
-                platformFeaturesTitle: "Platform Features",
-                feature1Title: "Visual Seat Selection",
-                feature1Text: "Cinema-style booking system lets customers choose their perfect spot in your venue",
-                feature2Title: "Reservation Management",
-                feature2Text: "Automated booking system with real-time calendar and occupancy tracking",
-                feature3Title: "Integrated Payments",
-                feature3Text: "Seamless payment processing with automatic confirmation for every booking",
-                feature4Title: "Revenue Analytics",
-                feature4Text: "Detailed reports showing additional income and customer insights",
-                feature5Title: "User Profiles",
-                feature5Text: "Professional networking features coming soon to build community in your space",
-                feature6Title: "Mobile Ready",
-                feature6Text: "Web platform today, mobile app coming soon for on-the-go management",
-                whySpottlyTitle: "Why Venue Owners Love Spottly",
-                whySpottlyText: "Turn empty tables into profit with zero investment. Stand out from competitors, attract loyal professionals, and generate pure revenue during your slow hours—all while your team focuses on what they do best.",
-                inspireTitle: "Create Inspiring Work Environments",
-                inspireText: "Your venue already has everything professionals need: ambiance, comfort, and quality service. Spottly helps you maximize this potential.",
-                contactTitle: "Ready to Transform Your Venue?",
-                contactSubtitle: "Join the coworking revolution and unlock new income streams",
-                contactInfo: "<strong>Contact:</strong> partners@spottly.com | <strong>Phone:</strong> +54 11 1234-5678",
-                formName: "Name",
-                formNamePlaceholder: "Your name",
-                formEmail: "Email",
-                formEmailPlaceholder: "you@email.com",
-                formMessage: "Message",
-                formMessagePlaceholder: "How can we help you?",
-                formButton: "Send Message",
-                formSuccess: "Thank you! Your message has been sent. We'll get in touch soon.",
-                formError: "Oops! Something went wrong. Please try again later.",
-                formNetworkError: "Oops! Network error. Please try again later.",
-                footerFAQ: "FAQs",
-                footerPolicy: "Cancellation Policy",
-                footerCopyright: "&copy; 2025 Spottly. Your new office around the corner."
-            },
-            es: {
-                heroTitle: "Mesas Vacías, <strong>Nuevas Oportunidades.</strong>",
-                heroSubtitle: "Registra tu café en Spottly y permite que freelancers y trabajadores remotos reserven tus mesas durante las horas tranquilas - sin esfuerzo y rentablemente",
-                heroCTA: "Asóciate con Spottly",
-                howItWorksTitle: "Cómo Funciona",
-                step1Title: "Registra Tu Local",
-                step1Text: "Únete a la plataforma de Spottly en minutos. Configura tus horarios disponibles, precios y capacidad del espacio con nuestro simple proceso de registro.",
-                step2Title: "Profesionales Reservan Tu Espacio",
-                step2Text: "Trabajadores remotos, freelancers y estudiantes descubren tu local a través de nuestra plataforma y reservan asientos para sesiones de trabajo productivas.",
-                step3Title: "Genera Ingresos Adicionales",
-                step3Text: "Gana dinero durante las horas de menor actividad mientras los clientes disfrutan de comida y bebidas. Nuestro sistema gestiona las reservas automáticamente.",
-                platformFeaturesTitle: "Características de la Plataforma",
-                feature1Title: "Selección Visual de Asientos",
-                feature1Text: "Sistema de reserva estilo cine que permite a los clientes elegir su lugar
-        setInterval(() => {
-            moveSlide(1);
-        }, 5000); 
+function changeLanguage(lang) {
+    const t = translations[lang];
+    
+    // Update buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+    
+    // Update hero section
+    document.querySelector('.hero h1').innerHTML = t.heroTitle;
+    document.querySelector('.hero p').textContent = t.heroSubtitle;
+    document.querySelector('.hero .cta-button').textContent = t.heroCTA;
+    
+    // Update How It Works
+    document.querySelector('.how-it-works h2').textContent = t.howItWorksTitle;
+    const steps = document.querySelectorAll('.step-card');
+    steps[0].querySelector('h3').textContent = t.step1Title;
+    steps[0].querySelector('p').textContent = t.step1Text;
+    steps[1].querySelector('h3').textContent = t.step2Title;
+    steps[1].querySelector('p').textContent = t.step2Text;
+    steps[2].querySelector('h3').textContent = t.step3Title;
+    steps[2].querySelector('p').textContent = t.step3Text;
+    
+    // Update Platform Features
+    document.querySelector('.platform-features h2').textContent = t.platformFeaturesTitle;
+    const features = document.querySelectorAll('.feature-card');
+    features[0].querySelector('h3').textContent = t.feature1Title;
+    features[0].querySelector('p').textContent = t.feature1Text;
+    features[1].querySelector('h3').textContent = t.feature2Title;
+    features[1].querySelector('p').textContent = t.feature2Text;
+    features[2].querySelector('h3').textContent = t.feature3Title;
+    features[2].querySelector('p').textContent = t.feature3Text;
+    features[3].querySelector('h3').textContent = t.feature4Title;
+    features[3].querySelector('p').textContent = t.feature4Text;
+    features[4].querySelector('h3').textContent = t.feature5Title;
+    features[4].querySelector('p').textContent = t.feature5Text;
+    features[5].querySelector('h3').textContent = t.feature6Title;
+    features[5].querySelector('p').textContent = t.feature6Text;
+    
+    // Update Why Spottly section
+    const whySections = document.querySelectorAll('.section');
+    whySections[2].querySelector('h2').textContent = t.whySpottlyTitle;
+    whySections[2].querySelector('p').textContent = t.whySpottlyText;
+    
+    // Update Inspire section
+    document.querySelector('.venue-showcase h2').textContent = t.inspireTitle;
+    document.querySelector('.venue-showcase p').textContent = t.inspireText;
+    
+    // Update Contact section
+    document.querySelector('.contact-section h2').textContent = t.contactTitle;
+    document.querySelector('.contact-section > p').textContent = t.contactSubtitle;
+    document.querySelectorAll('.contact-section > p')[1].innerHTML = t.contactInfo;
+    
+    // Update form labels
+    document.querySelector('label[for="name"]').textContent = t.formName;
+    document.querySelector('#name').placeholder = t.formNamePlaceholder;
+    document.querySelector('label[for="email"]').textContent = t.formEmail;
+    document.querySelector('#email').placeholder = t.formEmailPlaceholder;
+    document.querySelector('label[for="message"]').textContent = t.formMessage;
+    document.querySelector('#message').placeholder = t.formMessagePlaceholder;
+    document.querySelector('.contact-form button[type="submit"]').textContent = t.formButton;
+    
+    // Update footer
+    const footerLinks = document.querySelectorAll('.footer-links a');
+    footerLinks[0].textContent = t.footerFAQ;
+    footerLinks[1].textContent = t.footerPolicy;
+    document.querySelector('footer p').innerHTML = t.footerCopyright;
+}
