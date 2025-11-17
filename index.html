@@ -657,8 +657,8 @@
  <header id="header">
    <img src="https://i.imgur.com/TIe20GD.jpeg" alt="Spottly Logo" class="logo">
    <div class="language-switcher">
-       <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
-       <button class="lang-btn" onclick="changeLanguage('es')">ES</button>
+<button class="lang-btn active" onclick="changeLanguage('en', this)">EN</button>
+<button class="lang-btn" onclick="changeLanguage('es', this)">ES</button>
    </div>
 </header>
 <section class="hero">
@@ -893,12 +893,18 @@ const translations = {
 function changeLanguage(lang) {
     const t = translations[lang];
     
+   function changeLanguage(lang, button) {
+    const t = translations[lang];
+    
     // Update buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
-    event.target.classList.add('active');
+    button.classList.add('active');
     
+    // ... resto del código
+}
+   
     // Update hero section
     document.querySelector('.hero h1').innerHTML = t.heroTitle;
     document.querySelector('.hero p').textContent = t.heroSubtitle;
