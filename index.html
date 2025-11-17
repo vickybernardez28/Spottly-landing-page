@@ -384,6 +384,190 @@
             font-weight: 300;
         }
 
+        /* NUEVA SECCIÓN: CASE STUDY */
+        .case-study {
+            background: #FFFFFF;
+            padding: 120px 60px;
+        }
+
+        .case-study-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .case-intro {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .case-intro h3 {
+            font-size: 2.5rem;
+            color: #4B0E23;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .case-intro p {
+            font-size: 1.2rem;
+            color: #5D5D5D;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .stat-box {
+            background: #FAF3E0;
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(192, 192, 192, 0.3);
+            transition: all 0.3s;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(75, 14, 35, 0.12);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4B0E23 0%, #6B1E33 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #5D5D5D;
+            font-weight: 400;
+        }
+
+        .challenge-solution {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 50px;
+            margin: 80px 0;
+        }
+
+        .cs-box {
+            background: #FAF3E0;
+            padding: 45px 40px;
+            border-radius: 8px;
+            border-left: 4px solid #4B0E23;
+        }
+
+        .cs-box h4 {
+            font-size: 1.8rem;
+            color: #4B0E23;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .cs-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cs-box li {
+            font-size: 1.1rem;
+            color: #5D5D5D;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .cs-box li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4B0E23;
+            font-weight: 700;
+        }
+
+        .results-section {
+            background: linear-gradient(135deg, #4B0E23 0%, #6B1E33 100%);
+            padding: 60px 50px;
+            border-radius: 8px;
+            color: #FAF3E0;
+            margin: 60px 0;
+        }
+
+        .results-section h4 {
+            font-size: 2.2rem;
+            color: #E8E8E8;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .result-item {
+            text-align: center;
+            padding: 25px;
+            background: rgba(250, 243, 224, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(232, 232, 232, 0.2);
+        }
+
+        .result-item strong {
+            display: block;
+            font-size: 2rem;
+            color: #E8E8E8;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .result-item span {
+            font-size: 1rem;
+            color: #C0C0C0;
+        }
+
+        .testimonial {
+            background: #FFFFFF;
+            padding: 50px 45px;
+            border-radius: 8px;
+            border-left: 4px solid #C0C0C0;
+            margin: 60px 0;
+            box-shadow: 0 4px 20px rgba(75, 14, 35, 0.08);
+        }
+
+        .testimonial-text {
+            font-size: 1.3rem;
+            color: #2D2D2D;
+            font-style: italic;
+            line-height: 1.9;
+            margin-bottom: 25px;
+        }
+
+        .testimonial-author {
+            font-size: 1.1rem;
+            color: #4B0E23;
+            font-weight: 600;
+        }
+
+        .testimonial-role {
+            font-size: 1rem;
+            color: #5D5D5D;
+            font-weight: 300;
+        }
+
         .venue-showcase {
             padding: 120px 60px;
             background: #FFFFFF;
@@ -517,24 +701,6 @@
             box-shadow: 0 8px 25px rgba(192, 192, 192, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.6), inset 0 -2px 0 rgba(0, 0, 0, 0.3);
         }
 
-        .contact-form .form-success {
-            color: #fff;
-            background: #43b36d;
-            border-radius: 4px;
-            padding: 14px;
-            text-align: center;
-            font-weight: 400;
-        }
-
-        .contact-form .form-error {
-            color: #fff;
-            background: #c73e3e;
-            border-radius: 4px;
-            padding: 14px;
-            text-align: center;
-            font-weight: 400;
-        }
-
         footer {
             background: #4B0E23;
             color: #FAF3E0;
@@ -589,37 +755,6 @@
             font-weight: 300;
         }
 
-        .scroll-indicator {
-            position: fixed;
-            bottom: 40px;
-            right: 40px;
-            width: 55px;
-            height: 55px;
-            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 50%, #B8B8B8 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #4B0E23;
-            font-size: 1.4rem;
-            cursor: pointer;
-            box-shadow: 0 6px 20px rgba(192, 192, 192, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
-            transition: all 0.3s;
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .scroll-indicator.visible {
-            opacity: 1;
-            pointer-events: all;
-        }
-
-        .scroll-indicator:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(192, 192, 192, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.6), inset 0 -2px 0 rgba(0, 0, 0, 0.3);
-            background: linear-gradient(135deg, #E8E8E8 0%, #B8B8B8 50%, #E8E8E8 100%);
-        }
-
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.8rem;
@@ -633,7 +768,7 @@
                 font-size: 2.4rem;
             }
 
-            header, .hero, .section, .contact-section, footer, .venue-showcase {
+            header, .hero, .section, .contact-section, footer, .venue-showcase, .case-study {
                 padding: 60px 25px;
             }
 
@@ -647,7 +782,11 @@
                 margin-top: 10px;
             }
 
-            .features-showcase, .steps-container {
+            .features-showcase, .steps-container, .challenge-solution {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid, .results-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -661,133 +800,209 @@
 <button class="lang-btn" onclick="changeLanguage('es', this)">ES</button>
    </div>
 </header>
+
 <section class="hero">
     <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
         <source src="https://raw.githubusercontent.com/vickybernardez28/Spottly-landing-page/main/video.jpg.mp4" type="video/mp4">
-        <source src="./video.jpg.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
     
     <div class="hero-content">
         <h1>Empty Tables, <strong>New Opportunities.</strong></h1>
-            <p>List your café on Spottly and let freelancers and remote workers book your tables during slow hours - effortlessly and profitably</p>
-            <a href="#contact" class="cta-button">Partner With Spottly</a>
-        </div>
-    </section>
+        <p>List your café on Spottly and let freelancers and remote workers book your tables during slow hours - effortlessly and profitably</p>
+        <a href="#contact" class="cta-button">Partner With Spottly</a>
+    </div>
+</section>
 
-    <section class="section how-it-works">
-        <h2>How It Works</h2>
-        
-        <div class="steps-container">
-            <div class="step-card">
-                <div class="step-number">1</div>
-                <h3>Sign Up Your Venue</h3>
-                <p>Join Spottly's platform in minutes. Set your available hours, pricing, and space capacity with our simple onboarding process.</p>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">2</div>
-                <h3>Professionals Book Your Space</h3>
-                <p>Remote workers, freelancers, and students discover your venue through our platform and reserve seats for productive work sessions.</p>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">3</div>
-                <h3>Generate Additional Revenue</h3>
-                <p>Earn money during slow hours while customers enjoy food and beverages. Our system handles reservations automatically.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section platform-features">
-        <h2>Platform Features</h2>
-        
-        <div class="features-showcase">
-            <div class="feature-card">
-                <div class="feature-icon">🎯</div>
-                <h3>Visual Seat Selection</h3>
-                <p>Cinema-style booking system lets customers choose their perfect spot in your venue</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>Reservation Management</h3>
-                <p>Automated booking system with real-time calendar and occupancy tracking</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">💳</div>
-                <h3>Integrated Payments</h3>
-                <p>Seamless payment processing with automatic confirmation for every booking</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">📈</div>
-                <h3>Revenue Analytics</h3>
-                <p>Detailed reports showing additional income and customer insights</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">👥</div>
-                <h3>User Profiles</h3>
-                <p>Professional networking features coming soon to build community in your space</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">📱</div>
-                <h3>Mobile Ready</h3>
-                <p>Web platform today, mobile app coming soon for on-the-go management</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Why Venue Owners Love Spottly</h2>
-        <p style="font-size: 1.3rem; color: #5D5D5D; text-align: center; max-width: 900px; margin: 0 auto 40px; line-height: 1.9; font-weight: 300;">
-            Turn empty tables into profit with zero investment. Stand out from competitors, attract loyal professionals, and generate pure revenue during your slow hours—all while your team focuses on what they do best.
-        </p>
-    </section>
+<section class="section how-it-works">
+    <h2>How It Works</h2>
     
-    <section class="venue-showcase">
-        <div class="section" style="padding: 0;">
-            <h2>Create Inspiring Work Environments</h2>
-            <p style="font-size: 1.25rem; color: #5D5D5D; text-align: center; max-width: 800px; margin: 30px auto; font-weight: 300; line-height: 1.8;">Your venue already has everything professionals need: ambiance, comfort, and quality service. Spottly helps you maximize this potential.</p>
-            
-            <img src="https://i.imgur.com/3BURV5v.jpeg" 
-     alt="Beautiful coworking-ready café interior" 
-     class="venue-image">
+    <div class="steps-container">
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Sign Up Your Venue</h3>
+            <p>Join Spottly's platform in minutes. Set your available hours, pricing, and space capacity with our simple onboarding process.</p>
         </div>
-    </section>
 
-    <section class="contact-section" id="contact">
-        <h2>Ready to Transform Your Venue?</h2>
-        <p>Join the coworking revolution and unlock new income streams</p>
-        <p><strong>Contact:</strong> partners@spottly.com | <strong>Phone:</strong> +54 11 1234-5678</p>
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Professionals Book Your Space</h3>
+            <p>Remote workers, freelancers, and students discover your venue through our platform and reserve seats for productive work sessions.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Generate Additional Revenue</h3>
+            <p>Earn money during slow hours while customers enjoy food and beverages. Our system handles reservations automatically.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section platform-features">
+    <h2>Platform Features</h2>
+    
+    <div class="features-showcase">
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Visual Seat Selection</h3>
+            <p>Cinema-style booking system lets customers choose their perfect spot in your venue</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Reservation Management</h3>
+            <p>Automated booking system with real-time calendar and occupancy tracking</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">💳</div>
+            <h3>Integrated Payments</h3>
+            <p>Seamless payment processing with automatic confirmation for every booking</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3>Revenue Analytics</h3>
+            <p>Detailed reports showing additional income and customer insights</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>User Profiles</h3>
+            <p>Professional networking features coming soon to build community in your space</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Mobile Ready</h3>
+            <p>Web platform today, mobile app coming soon for on-the-go management</p>
+        </div>
+    </div>
+</section>
+
+<!-- NUEVA SECCIÓN: CASE STUDY -->
+<section class="case-study">
+    <div class="case-study-content">
+        <h2 style="font-size: 3.5rem; color: #4B0E23; margin-bottom: 30px; text-align: center; font-weight: 300; position: relative;">Success Story</h2>
         
-        <form class="contact-form" action="https://formspree.io/f/mvgwlwlk" method="POST">
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" required placeholder="Your name">
-
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required placeholder="you@email.com">
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
-
-            <button type="submit">Send Message</button>
-            <div id="formResponse" style="display:none"></div>
-        </form>
-    </section>
-
-    <footer>
-        <div class="footer-links">
-            <a href="#faqs">FAQs</a>
-            <a href="#cancellation">Cancellation Policy</a>
+        <div class="case-intro">
+            <h3>Café Brew & Co.: From Empty Tables to Thriving Workspace</h3>
+            <p>Discover how a local café in Buenos Aires transformed its slow hours into a profitable coworking destination with Spottly</p>
         </div>
-        <p style="margin-top: 20px; font-size: 1.05rem;">&copy; 2025 Spottly. Your new office around the corner.</p>
-    </footer>
 
-    <div class="scroll-indicator" id="scrollTop">↑</div>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Monthly Bookings</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">$3,500</div>
+                <div class="stat-label">Additional Monthly Revenue</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">85%</div>
+                <div class="stat-label">Occupancy Rate Increase</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">4.8★</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+        </div>
+
+        <div class="challenge-solution">
+            <div class="cs-box">
+                <h4>The Challenge</h4>
+                <ul>
+                    <li>70% of tables empty during weekday mornings</li>
+                    <li>Limited revenue between 8 AM - 12 PM</li>
+                    <li>High fixed costs with underutilized space</li>
+                    <li>Difficulty attracting remote workers organically</li>
+                </ul>
+            </div>
+
+            <div class="cs-box">
+                <h4>The Solution</h4>
+                <ul>
+                    <li>Listed venue on Spottly platform</li>
+                    <li>Offered hourly desk bookings at $5/hour</li>
+                    <li>Set up dedicated "work-friendly" zones</li>
+                    <li>Automated reservation and payment system</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h4>Results After 3 Months</h4>
+            <div class="results-grid">
+                <div class="result-item">
+                    <strong>450+</strong>
+                    <span>Total Bookings</span>
+                </div>
+                <div class="result-item">
+                    <strong>$10,500</strong>
+                    <span>Generated Revenue</span>
+                </div>
+                <div class="result-item">
+                    <strong>200+</strong>
+                    <span>New Customers</span>
+                </div>
+                <div class="result-item">
+                    <strong>60%</strong>
+                    <span>Repeat Booking Rate</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <p class="testimonial-text">"Spottly completely transformed our morning operations. What used to be our slowest period is now consistently booked. The platform is easy to use, and our staff loves how automated everything is. Plus, our coworking guests often bring friends or order lunch!"</p>
+            <p class="testimonial-author">María González</p>
+            <p class="testimonial-role">Owner, Café Brew & Co.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Why Venue Owners Love Spottly</h2>
+    <p style="font-size: 1.3rem; color: #5D5D5D; text-align: center; max-width: 900px; margin: 0 auto 40px; line-height: 1.9; font-weight: 300;">
+        Turn empty tables into profit with zero investment. Stand out from competitors, attract loyal professionals, and generate pure revenue during your slow hours—all while your team focuses on what they do best.
+    </p>
+</section>
+
+<section class="venue-showcase">
+    <div class="section" style="padding: 0;">
+        <h2>Create Inspiring Work Environments</h2>
+        <p style="font-size: 1.25rem; color: #5D5D5D; text-align: center; max-width: 800px; margin: 30px auto; font-weight: 300; line-height: 1.8;">Your venue already has everything professionals need: ambiance, comfort, and quality service. Spottly helps you maximize this potential.</p>
+        
+        <img src="https://i.imgur.com/3BURV5v.jpeg" alt="Beautiful coworking-ready café interior" class="venue-image">
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <h2>Ready to Transform Your Venue?</h2>
+    <p>Join the coworking revolution and unlock new income streams</p>
+    <p><strong>Contact:</strong> partners@spottly.com | <strong>Phone:</strong> +54 11 1234-5678</p>
+    
+    <form class="contact-form" action="https://formspree.io/f/mvgwlwlk" method="POST">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" required placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required placeholder="you@email.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="#faqs">FAQs</a>
+        <a href="#cancellation">Cancellation Policy</a>
+    </div>
+    <p style="margin-top: 20px; font-size: 1.05rem;">&copy; 2025 Spottly. Your new office around the corner.</p>
+</footer>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -796,10 +1011,6 @@ document.addEventListener('DOMContentLoaded', function() {
         video.muted = true;
         video.play().catch(error => {
             console.log('Video autoplay was prevented:', error);
-            document.body.addEventListener('click', function playVideo() {
-                video.play();
-                document.body.removeEventListener('click', playVideo);
-            }, { once: true });
         });
     }
 });
@@ -829,6 +1040,34 @@ const translations = {
         feature5Text: "Professional networking features coming soon to build community in your space",
         feature6Title: "Mobile Ready",
         feature6Text: "Web platform today, mobile app coming soon for on-the-go management",
+        
+        // Case Study
+        caseMainTitle: "Success Story",
+        caseIntroTitle: "Café Brew & Co.: From Empty Tables to Thriving Workspace",
+        caseIntroText: "Discover how a local café in Buenos Aires transformed its slow hours into a profitable coworking destination with Spottly",
+        stat1Label: "Monthly Bookings",
+        stat2Label: "Additional Monthly Revenue",
+        stat3Label: "Occupancy Rate Increase",
+        stat4Label: "Average Rating",
+        challengeTitle: "The Challenge",
+        challenge1: "70% of tables empty during weekday mornings",
+        challenge2: "Limited revenue between 8 AM - 12 PM",
+        challenge3: "High fixed costs with underutilized space",
+        challenge4: "Difficulty attracting remote workers organically",
+        solutionTitle: "The Solution",
+        solution1: "Listed venue on Spottly platform",
+        solution2: "Offered hourly desk bookings at $5/hour",
+        solution3: "Set up dedicated \"work-friendly\" zones",
+        solution4: "Automated reservation and payment system",
+        resultsTitle: "Results After 3 Months",
+        result1Label: "Total Bookings",
+        result2Label: "Generated Revenue",
+        result3Label: "New Customers",
+        result4Label: "Repeat Booking Rate",
+        testimonialText: "\"Spottly completely transformed our morning operations. What used to be our slowest period is now consistently booked. The platform is easy to use, and our staff loves how automated everything is. Plus, our coworking guests often bring friends or order lunch!\"",
+        testimonialAuthor: "María González",
+        testimonialRole: "Owner, Café Brew & Co.",
+        
         whySpottlyTitle: "Why Venue Owners Love Spottly",
         whySpottlyText: "Turn empty tables into profit with zero investment. Stand out from competitors, attract loyal professionals, and generate pure revenue during your slow hours—all while your team focuses on what they do best.",
         inspireTitle: "Create Inspiring Work Environments",
@@ -871,6 +1110,34 @@ const translations = {
         feature5Text: "Funciones de networking profesional próximamente para construir comunidad en tu espacio",
         feature6Title: "Listo para Móviles",
         feature6Text: "Plataforma web hoy, aplicación móvil próximamente para gestión en movimiento",
+        
+        // Case Study ES
+        caseMainTitle: "Historia de Éxito",
+        caseIntroTitle: "Café Brew & Co.: De Mesas Vacías a Espacio de Trabajo Próspero",
+        caseIntroText: "Descubre cómo un café local en Buenos Aires transformó sus horas tranquilas en un destino de coworking rentable con Spottly",
+        stat1Label: "Reservas Mensuales",
+        stat2Label: "Ingresos Adicionales Mensuales",
+        stat3Label: "Aumento en Tasa de Ocupación",
+        stat4Label: "Calificación Promedio",
+        challengeTitle: "El Desafío",
+        challenge1: "70% de las mesas vacías durante las mañanas de semana",
+        challenge2: "Ingresos limitados entre 8 AM - 12 PM",
+        challenge3: "Altos costos fijos con espacio subutilizado",
+        challenge4: "Dificultad para atraer trabajadores remotos orgánicamente",
+        solutionTitle: "La Solución",
+        solution1: "Registró el local en la plataforma Spottly",
+        solution2: "Ofreció reservas de escritorio por hora a $5/hora",
+        solution3: "Configuró zonas dedicadas \"amigables para el trabajo\"",
+        solution4: "Sistema automatizado de reservas y pagos",
+        resultsTitle: "Resultados Después de 3 Meses",
+        result1Label: "Reservas Totales",
+        result2Label: "Ingresos Generados",
+        result3Label: "Nuevos Clientes",
+        result4Label: "Tasa de Reservas Repetidas",
+        testimonialText: "\"Spottly transformó completamente nuestras operaciones matutinas. Lo que solía ser nuestro período más lento ahora está constantemente reservado. La plataforma es fácil de usar y a nuestro personal le encanta lo automatizado que está todo. ¡Además, nuestros huéspedes de coworking a menudo traen amigos o piden almuerzo!\"",
+        testimonialAuthor: "María González",
+        testimonialRole: "Propietaria, Café Brew & Co.",
+        
         whySpottlyTitle: "Por Qué Los Dueños de Locales Aman Spottly",
         whySpottlyText: "Convierte mesas vacías en ganancia sin inversión. Destácate de la competencia, atrae profesionales leales y genera ingresos puros durante tus horas tranquilas—todo mientras tu equipo se enfoca en lo que mejor sabe hacer.",
         inspireTitle: "Crea Ambientes de Trabajo Inspiradores",
@@ -931,6 +1198,43 @@ function changeLanguage(lang, button) {
     features[5].querySelector('h3').textContent = t.feature6Title;
     features[5].querySelector('p').textContent = t.feature6Text;
     
+    // Update Case Study Section
+    document.querySelector('.case-study h2').textContent = t.caseMainTitle;
+    document.querySelector('.case-intro h3').textContent = t.caseIntroTitle;
+    document.querySelector('.case-intro p').textContent = t.caseIntroText;
+    
+    const statBoxes = document.querySelectorAll('.stat-box .stat-label');
+    statBoxes[0].textContent = t.stat1Label;
+    statBoxes[1].textContent = t.stat2Label;
+    statBoxes[2].textContent = t.stat3Label;
+    statBoxes[3].textContent = t.stat4Label;
+    
+    const csBoxes = document.querySelectorAll('.cs-box');
+    csBoxes[0].querySelector('h4').textContent = t.challengeTitle;
+    const challengeItems = csBoxes[0].querySelectorAll('li');
+    challengeItems[0].textContent = t.challenge1;
+    challengeItems[1].textContent = t.challenge2;
+    challengeItems[2].textContent = t.challenge3;
+    challengeItems[3].textContent = t.challenge4;
+    
+    csBoxes[1].querySelector('h4').textContent = t.solutionTitle;
+    const solutionItems = csBoxes[1].querySelectorAll('li');
+    solutionItems[0].textContent = t.solution1;
+    solutionItems[1].textContent = t.solution2;
+    solutionItems[2].textContent = t.solution3;
+    solutionItems[3].textContent = t.solution4;
+    
+    document.querySelector('.results-section h4').textContent = t.resultsTitle;
+    const resultLabels = document.querySelectorAll('.result-item span');
+    resultLabels[0].textContent = t.result1Label;
+    resultLabels[1].textContent = t.result2Label;
+    resultLabels[2].textContent = t.result3Label;
+    resultLabels[3].textContent = t.result4Label;
+    
+    document.querySelector('.testimonial-text').textContent = t.testimonialText;
+    document.querySelector('.testimonial-author').textContent = t.testimonialAuthor;
+    document.querySelector('.testimonial-role').textContent = t.testimonialRole;
+    
     // Update Why Spottly section
     const whySections = document.querySelectorAll('.section');
     whySections[2].querySelector('h2').textContent = t.whySpottlyTitle;
@@ -961,3 +1265,5 @@ function changeLanguage(lang, button) {
     document.querySelector('footer p').innerHTML = t.footerCopyright;
 }
 </script>
+</body>
+</html>
