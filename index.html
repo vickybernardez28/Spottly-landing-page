@@ -789,7 +789,7 @@
 
     <div class="scroll-indicator" id="scrollTop">↑</div>
 
-    <script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.getElementById('heroVideo');
     if (video) {
@@ -803,6 +803,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
 const translations = {
     en: {
         heroTitle: "Empty Tables, <strong>New Opportunities.</strong>",
@@ -890,10 +891,7 @@ const translations = {
     }
 };
 
-function changeLanguage(lang) {
-    const t = translations[lang];
-    
-   function changeLanguage(lang, button) {
+function changeLanguage(lang, button) {
     const t = translations[lang];
     
     // Update buttons
@@ -902,9 +900,6 @@ function changeLanguage(lang) {
     });
     button.classList.add('active');
     
-    // ... resto del código
-}
-   
     // Update hero section
     document.querySelector('.hero h1').innerHTML = t.heroTitle;
     document.querySelector('.hero p').textContent = t.heroSubtitle;
@@ -965,3 +960,4 @@ function changeLanguage(lang) {
     footerLinks[1].textContent = t.footerPolicy;
     document.querySelector('footer p').innerHTML = t.footerCopyright;
 }
+</script>
