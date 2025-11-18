@@ -61,7 +61,7 @@
 }
 
     .logo {
-    height: px;
+    height: 50px;
     transition: transform 0.3s;
 }
 
@@ -89,7 +89,7 @@
         }
 
         .lang-btn:hover {
-            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 %, #B8B8B8 100%);
+            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 50%, #B8B8B8 100%);
             color: #FFFFFF;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(192, 192, 192, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -103,7 +103,7 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #4B0E23 0%, #6B1E33 %, #4B0E23 100%);
+            background: linear-gradient(135deg, #4B0E23 0%, #6B1E33 50%, #4B0E23 100%);
             padding: 140px 60px;
             text-align: center;
             position: relative;
@@ -113,8 +113,8 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: -%;
-            right: -%;
+            top: -50%;
+            right: -50%;
             width: 100%;
             height: 100%;
             background: radial-gradient(circle, rgba(192, 192, 192, 0.15) 0%, transparent 70%);
@@ -128,13 +128,13 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, transparent 0%, #B8B8B8 20%, #E8E8E8 %, #B8B8B8 80%, transparent 100%);
+            background: linear-gradient(90deg, transparent 0%, #B8B8B8 20%, #E8E8E8 50%, #B8B8B8 80%, transparent 100%);
             box-shadow: 0 0 10px rgba(192, 192, 192, 0.6);
         }
 
         @keyframes float {
             0%, 100% { transform: translate(0, 0); }
-            % { transform: translate(-30px, -30px); }
+            50% { transform: translate(-30px, -30px); }
         }
 
         .hero-content {
@@ -155,7 +155,7 @@
 
         .hero h1 strong {
             font-weight: 700;
-            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 %, #B8B8B8 100%);
+            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 50%, #B8B8B8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -177,7 +177,7 @@
         .hero p {
             font-size: 1.4rem;
             color: #FAF3E0;
-            margin-bottom: px;
+            margin-bottom: 50px;
             opacity: 0;
             animation: fadeInUp 1s 0.3s forwards;
             font-weight: 300;
@@ -190,10 +190,10 @@
         .cta-button {
             display: inline-block;
             padding: 18px 55px;
-            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 %, #B8B8B8 100%);
+            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 50%, #B8B8B8 100%);
             color: #4B0E23;
             text-decoration: none;
-            border-radius: px;
+            border-radius: 50px;
             font-size: 1.2rem;
             font-weight: 600;
             transition: all 0.4s;
@@ -207,7 +207,7 @@
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 35px rgba(192, 192, 192, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.7), inset 0 -2px 0 rgba(0, 0, 0, 0.3);
-            background: linear-gradient(135deg, #E8E8E8 0%, #B8B8B8 %, #E8E8E8 100%);
+            background: linear-gradient(135deg, #E8E8E8 0%, #B8B8B8 50%, #E8E8E8 100%);
             border-color: #E8E8E8;
         }
 
@@ -231,11 +231,11 @@
             content: '';
             position: absolute;
             bottom: -25px;
-            left: %;
-            transform: translateX(-%);
+            left: 50%;
+            transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background: linear-gradient(90deg, transparent 0%, #B8B8B8 30%, #E8E8E8 %, #B8B8B8 70%, transparent 100%);
+            background: linear-gradient(90deg, transparent 0%, #B8B8B8 30%, #E8E8E8 50%, #B8B8B8 70%, transparent 100%);
             box-shadow: 0 0 8px rgba(192, 192, 192, 0.6);
         }
 
@@ -246,13 +246,13 @@
         .steps-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: px;
+            gap: 50px;
             margin-top: 90px;
         }
 
         .step-card {
             background: #FAF3E0;
-            padding: px 40px;
+            padding: 50px 40px;
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(75, 14, 35, 0.08);
             transition: all 0.4s;
@@ -268,7 +268,7 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background: linear-gradient(90deg, #B8B8B8 0%, #E8E8E8 %, #B8B8B8 100%);
+            background: linear-gradient(90deg, #B8B8B8 0%, #E8E8E8 50%, #B8B8B8 100%);
             transform: scaleX(0);
             transition: transform 0.4s;
             box-shadow: 0 0 10px rgba(192, 192, 192, 0.6);
@@ -288,7 +288,7 @@
             height: 70px;
             background: #4B0E23;
             color: #E8E8E8;
-            border-radius: %;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -302,7 +302,7 @@
 
         .step-card:hover .step-number {
             transform: scale(1.1);
-            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 %, #B8B8B8 100%);
+            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 50%, #B8B8B8 100%);
             color: #4B0E23;
             box-shadow: 0 6px 20px rgba(192, 192, 192, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
             text-shadow: none;
@@ -354,7 +354,7 @@
             width: 80px;
             height: 80px;
             background: linear-gradient(135deg, #4B0E23 0%, #6B1E33 100%);
-            border-radius: %;
+            border-radius: 50%;
             margin: 0 auto 30px;
             display: flex;
             align-items: center;
@@ -365,7 +365,7 @@
         }
 
         .feature-card:hover .feature-icon {
-            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 %, #B8B8B8 100%);
+            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 50%, #B8B8B8 100%);
             transform: scale(1.1);
             box-shadow: 0 6px 25px rgba(192, 192, 192, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
         }
@@ -417,7 +417,7 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin: 60px 0;
         }
@@ -455,7 +455,7 @@
         .challenge-solution {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: px;
+            gap: 50px;
             margin: 80px 0;
         }
 
@@ -470,7 +470,7 @@
             font-size: 1.8rem;
             color: #4B0E23;
             margin-bottom: 25px;
-            font-weight: 0;
+            font-weight: 500;
         }
 
         .cs-box ul {
@@ -497,7 +497,7 @@
 
         .results-section {
             background: linear-gradient(135deg, #4B0E23 0%, #6B1E33 100%);
-            padding: 60px px;
+            padding: 60px 50px;
             border-radius: 8px;
             color: #FAF3E0;
             margin: 60px 0;
@@ -521,7 +521,7 @@
         .result-item {
             text-align: center;
             padding: 25px;
-            background: rgba(2, 243, 224, 0.1);
+            background: rgba(250, 243, 224, 0.1);
             border-radius: 8px;
             border: 1px solid rgba(232, 232, 232, 0.2);
         }
@@ -541,7 +541,7 @@
 
         .testimonial {
             background: #FFFFFF;
-            padding: px 45px;
+            padding: 50px 45px;
             border-radius: 8px;
             border-left: 4px solid #C0C0C0;
             margin: 60px 0;
@@ -592,7 +592,7 @@
         }
 
         .contact-section {
-            background: linear-gradient(135deg, #4B0E23 0%, #6B1E33 %, #4B0E23 100%);
+            background: linear-gradient(135deg, #4B0E23 0%, #6B1E33 50%, #4B0E23 100%);
             padding: 100px 60px;
             text-align: center;
             color: #FAF3E0;
@@ -607,7 +607,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, transparent 0%, #B8B8B8 20%, #E8E8E8 %, #B8B8B8 80%, transparent 100%);
+            background: linear-gradient(90deg, transparent 0%, #B8B8B8 20%, #E8E8E8 50%, #B8B8B8 80%, transparent 100%);
             box-shadow: 0 0 10px rgba(192, 192, 192, 0.6);
         }
 
@@ -621,7 +621,7 @@
         }
 
         .contact-section h2::after {
-            background: linear-gradient(90deg, transparent 0%, #B8B8B8 30%, #E8E8E8 %, #B8B8B8 70%, transparent 100%);
+            background: linear-gradient(90deg, transparent 0%, #B8B8B8 30%, #E8E8E8 50%, #B8B8B8 70%, transparent 100%);
             box-shadow: 0 0 8px rgba(192, 192, 192, 0.6);
         }
 
@@ -635,9 +635,9 @@
         }
 
         .contact-form {
-            max-width: 5px;
-            margin: px auto 0 auto;
-            background: rgba(2, 243, 224, 0.05);
+            max-width: 550px;
+            margin: 50px auto 0 auto;
+            background: rgba(250, 243, 224, 0.05);
             padding: 45px 40px;
             border-radius: 8px;
             backdrop-filter: blur(10px);
@@ -682,10 +682,10 @@
 
         .contact-form button[type="submit"] {
             margin-top: 15px;
-            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 %, #B8B8B8 100%);
+            background: linear-gradient(135deg, #B8B8B8 0%, #E8E8E8 50%, #B8B8B8 100%);
             color: #4B0E23;
             border: none;
-            border-radius: px;
+            border-radius: 50px;
             font-size: 1.15rem;
             font-weight: 600;
             padding: 16px 0;
@@ -696,7 +696,7 @@
         }
 
         .contact-form button[type="submit"]:hover {
-            background: linear-gradient(135deg, #E8E8E8 0%, #B8B8B8 %, #E8E8E8 100%);
+            background: linear-gradient(135deg, #E8E8E8 0%, #B8B8B8 50%, #E8E8E8 100%);
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(192, 192, 192, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.6), inset 0 -2px 0 rgba(0, 0, 0, 0.3);
         }
@@ -713,7 +713,7 @@
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: px;
+            gap: 50px;
             margin-bottom: 35px;
             flex-wrap: wrap;
         }
@@ -735,7 +735,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, #B8B8B8 0%, #E8E8E8 %, #B8B8B8 100%);
+            background: linear-gradient(90deg, #B8B8B8 0%, #E8E8E8 50%, #B8B8B8 100%);
             transition: width 0.3s;
             box-shadow: 0 0 8px rgba(192, 192, 192, 0.6);
         }
@@ -892,11 +892,11 @@
 
         <div class="stats-grid">
             <div class="stat-box">
-                <div class="stat-number">1+</div>
+                <div class="stat-number">150+</div>
                 <div class="stat-label">Monthly Bookings</div>
             </div>
             <div class="stat-box">
-                <div class="stat-number">$0K</div>
+                <div class="stat-number">$3,500</div>
                 <div class="stat-label">Additional Monthly Revenue</div>
             </div>
             <div class="stat-box">
@@ -913,7 +913,7 @@
             <div class="cs-box">
                 <h4>The Challenge</h4>
                 <ul>
-                    <li>Unused tables during the morning</li>
+                    <li>70% of tables empty during weekday mornings</li>
                     <li>Limited revenue between 8 AM - 12 PM</li>
                     <li>High fixed costs with underutilized space</li>
                     <li>Difficulty attracting remote workers organically</li>
@@ -924,10 +924,32 @@
                 <h4>The Solution</h4>
                 <ul>
                     <li>Listed venue on Spottly platform</li>
-                    <li>Offered shift desk bookings</li>
-                    <li>Cinema style booking system lets customers choose their perfect spot</li>
+                    <li>Offered hourly desk bookings at $5/hour</li>
+                    <li>Set up dedicated "work-friendly" zones</li>
                     <li>Automated reservation and payment system</li>
                 </ul>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h4>Results After 3 Months</h4>
+            <div class="results-grid">
+                <div class="result-item">
+                    <strong>450+</strong>
+                    <span>Total Bookings</span>
+                </div>
+                <div class="result-item">
+                    <strong>$10,500</strong>
+                    <span>Generated Revenue</span>
+                </div>
+                <div class="result-item">
+                    <strong>200+</strong>
+                    <span>New Customers</span>
+                </div>
+                <div class="result-item">
+                    <strong>60%</strong>
+                    <span>Repeat Booking Rate</span>
+                </div>
             </div>
         </div>
 
@@ -1028,15 +1050,20 @@ const translations = {
         stat3Label: "Occupancy Rate Increase",
         stat4Label: "Average Rating",
         challengeTitle: "The Challenge",
-        challenge1: "Unused tables during the morning",
+        challenge1: "70% of tables empty during weekday mornings",
         challenge2: "Limited revenue between 8 AM - 12 PM",
         challenge3: "High fixed costs with underutilized space",
         challenge4: "Difficulty attracting remote workers organically",
         solutionTitle: "The Solution",
         solution1: "Listed venue on Spottly platform",
-        solution2: "Offered shift desk bookings",
-        solution3: "Cinema style boiking system lets customers choose their perfect spot",
+        solution2: "Offered hourly desk bookings at $5/hour",
+        solution3: "Set up dedicated \"work-friendly\" zones",
         solution4: "Automated reservation and payment system",
+        resultsTitle: "Results After 3 Months",
+        result1Label: "Total Bookings",
+        result2Label: "Generated Revenue",
+        result3Label: "New Customers",
+        result4Label: "Repeat Booking Rate",
         testimonialText: "\"Spottly completely transformed our morning operations. What used to be our slowest period is now consistently booked. The platform is easy to use, and our staff loves how automated everything is. Plus, our coworking guests often bring friends or order lunch!\"",
         testimonialAuthor: "María González",
         testimonialRole: "Owner, Café Brew & Co.",
@@ -1093,15 +1120,20 @@ const translations = {
         stat3Label: "Aumento en Tasa de Ocupación",
         stat4Label: "Calificación Promedio",
         challengeTitle: "El Desafío",
-        challenge1: "Mesas sin uso durante la mañana",
+        challenge1: "70% de las mesas vacías durante las mañanas de semana",
         challenge2: "Ingresos limitados entre 8 AM - 12 PM",
         challenge3: "Altos costos fijos con espacio subutilizado",
         challenge4: "Dificultad para atraer trabajadores remotos orgánicamente",
         solutionTitle: "La Solución",
         solution1: "Registró el local en la plataforma Spottly",
-        solution2: "Ofreció reservas de escritorio por turno",
-        solution3: "El sistema de reservas tipo cine permite a los clientes elegir su lugar perfecto",
+        solution2: "Ofreció reservas de escritorio por hora a $5/hora",
+        solution3: "Configuró zonas dedicadas \"amigables para el trabajo\"",
         solution4: "Sistema automatizado de reservas y pagos",
+        resultsTitle: "Resultados Después de 3 Meses",
+        result1Label: "Reservas Totales",
+        result2Label: "Ingresos Generados",
+        result3Label: "Nuevos Clientes",
+        result4Label: "Tasa de Reservas Repetidas",
         testimonialText: "\"Spottly transformó completamente nuestras operaciones matutinas. Lo que solía ser nuestro período más lento ahora está constantemente reservado. La plataforma es fácil de usar y a nuestro personal le encanta lo automatizado que está todo. ¡Además, nuestros huéspedes de coworking a menudo traen amigos o piden almuerzo!\"",
         testimonialAuthor: "María González",
         testimonialRole: "Propietaria, Café Brew & Co.",
